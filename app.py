@@ -8,6 +8,7 @@ import numpy as np
 app = Flask(__name__)
 api = Api(app)
 
+cv = pickle.load(open('CountVectorizer.sav', 'rb'))
 dec_tree_classifier = pickle.load(open('dec_tree.sav', 'rb'))
 ranforest_classifier = pickle.load(open('ranforest.sav', 'rb'))
 
@@ -28,7 +29,7 @@ class PredictSentiment(Resource):
         # vectorize the user's query and make a prediction
         y = stemmer.stem(user_query)
 
-        cv = CountVectorizer() #initially 15000+ returned.
+        # cv = CountVectorizer() #initially 15000+ returned.
         y = cv.transform(np.array([y])).toarray()
 
         y_pred_dec_tree = dec_tree_classifier.predict(y)
