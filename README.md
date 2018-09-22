@@ -19,6 +19,11 @@
 - split dataset menjadi 2 bagian yaitu sebagai data train dan data test dengan porsi 80:20
 - lakukan proses fitting/training terhadap data train dengan algoritma decision tree dan random forest
 - setelah itu cek tingkat akurasi terhadap data test, dihasilkan akurasi decision tree dan random forest secara berurut yaitu
+- simpan model kedalam `pickle` untuk kemudian digunakan sebagai `API`
+### use of api
+- terdapat suatu program yang bertugas sebagai server
+- teks yang dimasukkan melalui url akan di kirim ke server
+- teks tersebut akan di preprocessing, kemudian di lakukan feature extraction untuk kemudian dapat dilakukan prediksi menggunakan model yang telah dibuat sebelumnya, prediksi dihasilkan dalam bentuk format json
 
 ![akurasi](https://raw.githubusercontent.com/ChoniyuAzwan/Sentiment-Analysis-API/master/akurasi.PNG)
 
