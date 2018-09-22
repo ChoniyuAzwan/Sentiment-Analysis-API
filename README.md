@@ -23,5 +23,6 @@
 ![akurasi](https://raw.githubusercontent.com/ChoniyuAzwan/Sentiment-Analysis-API/master/akurasi.PNG)
 
 ### analisa
-- tingkat akurasi kedua algoritma tersebut masih sangat buruk, hal tersebut mungkin dikarenakan jumlah dataset yang kurang bannyak dan kurangnya hyperparameter tuning
-- random forest menghasilkan tingkat akurasi yang lebih tinggi dibandingkan decision tree karena
+- tingkat akurasi kedua algoritma tersebut masih sangat buruk, hal tersebut mungkin dikarenakan jumlah dataset yang kurang banyak serta feature extraction dan hyperparameter tuning yang kurang optimal
+- random forest menghasilkan tingkat akurasi yang lebih tinggi dibandingkan decision tree karena decision tree dapat menimbulkan overfitting serta variansi yang tinggi, maka untuk menurunkan tingkat variansi digunakanlah random forest
+- random forest merupakan sekumpulan koleksi feature secara random/acak dari decision tree untuk membangun beberapa decision tree baru dengna feature yang lebih beragam, lalu kemudian merata-ratakan hasilnya yang berupa vote terbanyak dari jenis klasifikasi yang dihasilkan.
